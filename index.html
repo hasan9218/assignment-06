@@ -52,36 +52,49 @@
     </header>
     <main class="bg-[#f0fdf4]">
         <!-- chose your area -->
-        <section class="chose-area"></section>
-        <!-- campaign-area -->
-        <section class="campaign-area container mx-auto py-24">
-            <div class="campaign-title text-center text-5xl font-semibold text-[#18181b] mb-10">
-                <h2>About the Campaign</h2>
+        <section class="chose-area container mx-auto py-14 md:py-24">
+            <div class="chose-title text-center mb-10">
+                <h2 class="text-2xl md:text-5xl font-bold mb-5 text-[#18181b]">Choose Your Trees</h2>
             </div>
-            <div class="campaign-content flex items-center max-w-5xl mx-auto gap-7">
-                <div class="campaign-left w-1/2">
-                    <img src="./assets/about.png" alt="">
+            <div class="chose-content">
+                <div class="category">
+                    <div id="category-container" class=""></div>
                 </div>
-                <div class="campaign-right w-1/2">
-                    <p class="text-base mb-7 text-[#425158]">Green Earth is a global tree plantation initiative
-                        dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees
-                        worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and
-                        combat global warming.</p>
-                    <ul class="list-disc pl-7">
-                        <li class="text-base  text-[#425158]">Restoration of natural habitats</li>
-                        <li class="text-base  text-[#425158]">Improvement of air quality</li>
-                        <li class="text-base  text-[#425158]">Support for local communities</li>
-                    </ul>
-                </div>
+                <div class="category-items"></div>
+                <div class="category-cart"></div>
+
+            </div>
+
+        </section>
+        <!-- campaign-area -->
+        <section class="campaign-area container mx-auto py-14 md:py-24">
+            <div class="campaign-title text-center mb-10">
+                <h2 class="text-2xl md:text-5xl font-bold mb-5 text-[#18181b]">About the Campaign</h2>
+            </div>
+            <div class="campaign-content md:flex items-center max-w-5xl mx-auto gap-7 px-5 md:px-0"">
+                <div class=" campaign-left md:w-1/2 mb-10 md:mb-0">
+                <img src="./assets/about.png" alt="">
+            </div>
+            <div class="campaign-right md:w-1/2">
+                <p class="text-base mb-7 text-[#425158]">Green Earth is a global tree plantation initiative
+                    dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees
+                    worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and
+                    combat global warming.</p>
+                <ul class="list-disc pl-7">
+                    <li class="text-base  text-[#425158]">Restoration of natural habitats</li>
+                    <li class="text-base  text-[#425158]">Improvement of air quality</li>
+                    <li class="text-base  text-[#425158]">Support for local communities</li>
+                </ul>
+            </div>
             </div>
         </section>
         <!-- our impact area -->
         <section class="bg-[#CFF0DC]">
-            <div class="our-impact-area container mx-auto py-24">
-                <div class="impact-title text-center text-5xl font-semibold text-[#18181b] mb-10">
-                    <h2>Our Impact</h2>
+            <div class="our-impact-area container mx-auto py-14 md:py-24 px-5 md:px-0">
+                <div class="impact-title text-center mb-10">
+                    <h2 class="text-2xl md:text-5xl font-bold mb-5 text-[#18181b]">Our Impact</h2>
                 </div>
-                <div class="our-impact-content grid grid-cols-3 gap-12">
+                <div class="our-impact-content grid md:grid-cols-3 gap-12">
                     <div class="bg-white text-center py-10 rounded-xl">
                         <h3 class="text-3xl font-medium text-[#15803D]">500K+</h3>
                         <span class="text-base  text-[#425158]">Trees Planted</span>
@@ -98,9 +111,9 @@
             </div>
         </section>
         <!-- donate area -->
-        <section class="donate-area bg-[#166534] py-24">
-            <div class="donate-title text-center text-4xl font-semibold text-white mb-10">
-                <h2>Plant a Tree Today</h2>
+        <section class="donate-area bg-[#166534] py-14 md:py-24 px-5 md:px-0"">
+            <div class=" donate-title text-center mb-10">
+            <h2 class="text-2xl md:text-5xl font-bold mb-5 text-white">About the Campaign</h2>
             </div>
             <div class="donate-content container mx-auto max-w-2xl bg-[#15803D] rounded-xl p-5">
                 <fieldset class="fieldset rounded-box p-4">
@@ -109,7 +122,8 @@
                     <input type="email" class="input focus:outline-none focus:border-none w-full mb-2"
                         placeholder="Your Email Address" />
                     <div class="w-full mb-2">
-                        <select class="w-full rounded-lg p-3 bg-white focus:ring-0 focus:outline-none border-0 cursor-pointer">
+                        <select
+                            class="w-full rounded-lg p-3 bg-white focus:ring-0 focus:outline-none border-0 cursor-pointer">
                             <option>Number of Trees</option>
                             <option>1 tree $5</option>
                             <option>5 trees $25</option>
@@ -124,6 +138,11 @@
             </div>
         </section>
     </main>
+    <footer class="bg-[#14532D]">
+        <div class="footer-content container mx-auto py-5 text-center">
+            <p class="text-white">© 2025 Green Earth. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 
