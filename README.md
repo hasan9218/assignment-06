@@ -8,23 +8,25 @@ Ans: var, let, and const all use to declare a variables in JavaScript. var is ca
 
 Question-02: What is the difference between map(), forEach(), and filter()?
 
-Ans: first use (document.createElement) for make new element, like div,h2,p then set content with innerText or innerHTML add any class or id for  select and last part appendChild to insert the page.
+Ans: map() loops through an array. it return new array with results  calling a function element.
+forEach() loops a array and executes a function for each element. It does not return.
+filter() iterates over an array and returns a new array containing only the elements that matched a given condition.
 
 
 
-Question-03: What is Event Bubbling and how does it work?
+Question-03: What are arrow functions in ES6?
 
-Ans: Event bubbling is a events move by dom, when click on a element like a button the event does not stay  element. it bubbles up to its         parent , then grandparent . the event can trigger on the inner element first and then on its parent in order.it helps you handle event more efficiently.
-
-
-
-Question-04: What is Event Delegation in JavaScript? Why is it useful?
-
-Ans: Event delegation in JavaScript is a way to handle events by put a single event listener in a parent element instead of each individual child. When a child element is clicked, the event bubble up to the parent. it use useful for create code fast and easy to manage.
+Ans: Arrow functions are shorthand form of JavaScript functions introduced in ES6. They are written using the =>  the regular function keyword.
 
 
 
+Question-04: How does destructuring assignment work in ES6?
 
-Question-05: What is the difference between preventDefault() and stopPropagation() methods?
+Ans: Destructuring assignment in ES6 is a extract values from arrays or objects and assign to variables in a single statement.
 
-Ans:  preventDefault() and stopPropagation() are two different ways control event. preventDefault() stops default behavior of a element and stopPropagation() stop the event from bubbling up to parent element.
+
+
+
+Question-05:  Explain template literals in ES6. How are they different from string concatenation?
+
+Ans: Template literals in ES6 a modern way to work with strings, makes it easier to include variables and multi-line text. It use in backticks (``) with of single or double quotes.
